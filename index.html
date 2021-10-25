@@ -1,0 +1,672 @@
+<!-- MUHAMMAD NASIR SAEED -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Week</title>
+</head>
+
+<style>
+    .task05 h2,
+    .task06 h2,
+    .task07 h2,
+    .task08 h2,
+    .task09 h2,
+    .task10 h2,
+    .task11 h2,
+    .task12 h2,
+    .task13 h2,
+    .task14 h2,
+    .task15 h2,
+    .task16 h2,
+    .task17 h2,
+    .task18 h2,
+    .task19 h2,
+    .task20 h2 {
+        font-size: 29px;
+        font-weight: bold;
+    }
+
+    #years,
+    #jan1,
+    #jan2,
+    #num,
+    #dateAug,
+    #n1,
+    #n2,
+    #operator,
+    #temp1,
+    #temperature,
+    #add1,
+    #add2,
+    #val1,
+    #inp1,
+    #inp2,
+    #str1,
+    #inp3,
+    #hour,
+    #reversing,
+    #largVal,
+    #largVal1,
+    #largVal2,
+    #largVal3,
+    #task17 input,
+    #task18 input,
+    #task19 input,
+    #task20 input {
+        border-radius: 10px;
+        border: 2px solid grey;
+        padding: 13px 30px;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4,
+    .btn5,
+    .btn6,
+    .btn7,
+    .btn8,
+    .btn9,
+    .btn10,
+    .btn11,
+    .btn12,
+    .btn13,
+    .btn14,
+    .btn15,
+    .btn16 {
+
+        padding: 13px 30px;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        transition: all 0.2s;
+        font-size: 16px;
+        border: 2px solid black;
+
+    }
+
+    .btn1:hover,
+    .btn2:hover,
+    .btn3:hover,
+    .btn4:hover,
+    .btn5:hover,
+    .btn6:hover,
+    .btn7:hover,
+    .btn8:hover,
+    .btn9:hover,
+    .btn10:hover,
+    .btn11:hover,
+    .btn12:hover,
+    .btn13:hover,
+    .btn14:hover,
+    .btn15:hover,
+    .btn16:hover {
+        color: black;
+        background-color: rgb(147, 229, 243);
+    }
+
+    #task00 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+</style>
+
+<body>
+
+
+    <h2 id="task00"><u>Coding Week 7</u> </h2>
+
+    <h2 id="task01"></h2>
+    <h2 id="task02"></h2>
+    <h2 id="task03"></h2>
+    <h2 id="task04"></h2>
+
+    <div class="task05">
+        <hr>
+        <h2><u>Task05</u> </h2>
+        <input type="number" id="years" placeholder="Enter Year">
+        <button class="btn1">Check</button>
+        <h1 id="result"></h1>
+        <hr>
+    </div>
+
+    <div class="task06">
+        <hr>
+        <h2><u>Task06</u> </h2>
+        <input type="number" id="jan1" placeholder="Enter Starting Year">
+        <input type="number" id="jan2" placeholder="Enter Ending Year">
+        <button class="btn2" onclick="myyear()">Check</button>
+        <h1 id="task06"></h1>
+        <hr>
+    </div>
+
+    <div class="task07">
+        <hr>
+        <h2><u>Task07</u> </h2>
+        <h2>Guess the number between 1 and 10</h2>
+        <input type="number" id="num" placeholder="Enter A Number">
+        <button class="btn3" onclick="randomNum()">Match</button>
+        <h1 id="task07"></h1>
+        <hr>
+    </div>
+
+    <div class="task08">
+        <hr>
+        <h2><u>Task08</u> </h2>
+        <h2>Calculate</h2>
+        <input type="date" id="dateAug">
+        <button class="btn4" onclick="confirmDay()">Count</button>
+        <h1 id="task08"></h1>
+        <hr>
+    </div>
+
+    <div class="task09">
+        <hr>
+        <h2><u>Task09</u> </h2>
+        <h2>Calculator</h2>
+        <input type="number" id="n1" placeholder="Enter First Number">
+        <input type="number" id="n2" placeholder="Enter Second Number">
+        <select name="oper" id="operator">
+            <option value="select">Select</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button class="btn5" onclick="Tables()">Calculate</button>
+        <h1 id="task09"></h1>
+        <hr>
+    </div>
+
+    <div class="task10">
+        <hr>
+        <h2><u>Task10</u> </h2>
+        <h2>Check Temperature</h2>
+        <input type="number" id="temp1" placeholder="Enter Temperature">
+        <select name="tem" id="temperature">
+            <option value="select">Select</option>
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+        </select>
+        <button class="btn6" onclick="checkTem()">Convert</button>
+        <h1 id="task10"></h1>
+        <hr>
+    </div>
+
+    <div class="task11">
+        <hr>
+        <h2><u>Task11</u></h2>
+        <h2>Addition</h2>
+        <input type="number" id="add1" placeholder="Enter First Number">
+        <input type="number" id="add2" placeholder="Enter Second Number">
+        <button class="btn7" onclick="AddTwo()">Calculate</button>
+        <h1 id="task11"></h1>
+        <hr>
+    </div>
+    <div class="task12">
+        <hr>
+        <h2><u>Task12</u></h2>
+        <input type="number" id="val1" placeholder="Enter Number">
+        <button class="btn8" onclick="valCheck()">Check</button>
+        <h1 id="task12"></h1>
+        <hr>
+    </div>
+    <div class="task13">
+        <hr>
+        <h2><u>Task13</u></h2>
+        <input type="number" id="inp1" placeholder="Enter First Number">
+        <input type="number" id="inp2" placeholder="Enter Second Number">
+        <input type="number" id="inp3" placeholder="Enter Third Number">
+        <button class="btn9" onclick="gradCheck()">Check</button>
+        <h1 id="task13"></h1>
+        <hr>
+    </div>
+    <div class="task14">
+        <hr>
+        <h2><u>Task14</u></h2>
+        <input type="text" id="str1" placeholder="Enter String">
+        <button class="btn10" onclick="checkStr()">Check</button>
+        <h1 id="task14"></h1>
+        <hr>
+    </div>
+
+    <div class="task15">
+        <hr>
+        <h2><u>Task15</u></h2>
+        <input type="number" id="hour" placeholder="Enter Days">
+        <button class="btn11" onclick="checkDays()">Check</button>
+        <h1 id="task15"></h1>
+        <hr>
+    </div>
+
+    <div class="task16">
+        <hr>
+        <h2><u>Task16</u></h2>
+        <input type="text" id="reversing" placeholder="Enter Array">
+        <button class="btn12" onclick="reverStr()">Reverse</button>
+        <h1 id="task16"></h1>
+        <hr>
+    </div>
+    <hr />
+    <h2>Task 17</h2>
+    <div id="task17">
+        <form>
+            <input type="text" placeholder="Enter Array Elements Seperated By Comma's e.g., 2,3,4,5" />
+            <button class="btn13">Check</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+
+
+    <hr />
+    <h2>Task 18</h2>
+    <div id="task18">
+        <form>
+            <input type="text" placeholder="Enter Array Elements Seperated By Comma's e.g., 2,3,4,5" class="input1" />
+            <input type="number" placeholder="Enter Offset 1,2,3..." class="input2" />
+            <button class="btn14">Check</button>
+        </form>
+        <div id="result1"></div>
+    </div>
+    <hr />
+
+
+
+    <hr />
+    <h2>Task 19</h2>
+    <div id="task19">
+        <form>
+            <input type="text" placeholder="Enter Array Elements Seperated By Comma's e.g., 2,3,4,5" />
+            <button class="btn15">Check</button>
+        </form>
+        <div id="result2"></div>
+    </div>
+    <hr />
+    <h2>Task 20</h2>
+    <div id="task20">
+        <form>
+            <input type="text" placeholder="Enter Array Elements Seperated By Comma's e.g., 2,3,4,5" class="input1" />
+            <input type="number" placeholder="Enter Number To Replace" class="input2" />
+            <input type="number" placeholder="Enter Number To Replace To" class="input3" />
+            <button class="btn16">Replace</button>
+        </form>
+        <div id="result3"></div>
+    </div>
+    <hr />
+
+
+
+
+
+    <script>
+        //************************************************************ */
+        // TASK NO 1 :
+
+        let firstDate = new Date();
+        let firstHour = firstDate.getHours();
+        let firstMin = firstDate.getMinutes();
+        let firstSec = firstDate.getSeconds();
+        let arrOne = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ]
+
+        document.getElementById("task01").innerHTML = `<hr> <h3><u>Task01</u></h3> Today is : ${arrOne[firstDate.getDay()]} <br> <br> Current time is : ${firstHour >= 12 ? firstHour - 12 : firstHour} ${firstHour >= 12 ? "PM" : "AM"} : ${firstMin} : ${firstSec} <hr>`;
+
+        //************************************************************ */
+        // TASK NO 2 :
+
+        let secDate = firstDate.getDate();
+        let secMon = firstDate.getMonth();
+        let secYear = firstDate.getFullYear();
+
+        if (secDate < 09) {
+            secDate = "0" + secDate;
+        }
+        else if (secMon < 10) {
+            secMon = secMon + 1;
+
+        }
+        document.getElementById("task02").innerHTML = `<hr><h3><u>Task02</u></h3> <br> <strong><u>Output:</u></strong> ${secMon} - ${secDate} - ${secYear} , ${secMon} / ${secDate} / ${secYear}&nbsp Or &nbsp${secDate} - ${secMon} - ${secYear} , ${secDate} / ${secMon} / ${secYear}<hr>`;
+
+        //************************************************************ */
+        // TASK NO 3 :
+
+        const a = 5;
+        const b = 6;
+        const c = 7;
+        const s = (a + b + c) / 2;
+        document.getElementById("task03").innerHTML = `<hr> <h3><u>Task03</u></h3> let a = 5 <br> b = 6 <br> c = 7 <br> s = (a + b + c) / 2 <br><br> <strong><u>Area of Triangle is </u></strong>&nbsp = &nbsp
+        ${Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(3)} <hr>`
+
+        //************************************************************ */
+        // TASK NO 4 :
+        function reverse(str) {
+            let arr = [];
+            for (i = 0; i < str.length; i++) {
+                arr.unshift(str[i])
+            }
+            return arr.join('');
+        }
+        document.getElementById("task04").innerHTML = `<hr><h3><u>Task04</u></h3>A JavaScript program to rotate the string "Saylani" <br><br> <strong><u>Output:</u></strong> &nbsp ${reverse("Saylani")} <hr>`;
+
+        //************************************************************ */
+        // TASK NO 5 :
+        const year = document.querySelector("#years");
+        const result = document.querySelector("#result");
+        document.querySelector(".btn1").addEventListener("click", () => {
+            if (year.value % 4 === 0) {
+                result.innerHTML = year.value + " is leap year";
+            }
+            else {
+
+                result.innerHTML = year.value + " is not leap year";
+            }
+        });
+
+
+        //************************************************************ */
+        // Task N0 6
+        function myyear() {
+            let y1 = document.getElementById("jan1").value
+            let y2 = document.getElementById("jan2").value
+            let y3 = "";
+            for (let i = y1; i <= y2; i++) {
+                let d = new Date(i, 0, 1);
+                if (d.getDay() === 0) {
+                    y3 += '<p>' + `1st January is being a Sunday &nbsp` + i + '</p>';
+                }
+                else if (y3 === '') {
+                    document.getElementById("task06").innerHTML = `<p>No Year Exist</p>`;
+
+                }
+                else {
+                    document.getElementById("task06").innerHTML = `<p> Year having 
+                    Sunday on 1st January are :${y3}</p>`;
+                }
+            }
+        }
+
+
+        //************************************************************ */
+        // Task N0 7
+
+        function randomNum() {
+            let num1 = document.getElementById("num").value
+            let num2 = Math.ceil(Math.random() * 10);
+            if (num1 == num2) {
+                document.getElementById("task07").innerHTML = `Guess No ${num1}
+                     Match Random No ${num2} <br> Good Work.`;
+            }
+            else {
+                document.getElementById("task07").innerHTML = `Guess No ${num1}
+                     Did Not Match Random No ${num2}.`;
+
+            }
+
+        }
+
+        //************************************************************ */
+        // Task N0 8
+        // Write a JavaScript program to calculate days left until next 14 August.
+        function confirmDay() {
+            let today = new Date();
+            let August = today.getFullYear();
+            August = August + 1;
+
+            let AugustDate = new Date(`${August}-07-14`);
+
+            let oneDay = 1000 * 60 * 60 * 24;
+
+            let remainingDay = Math.ceil((AugustDate.getTime() - today.getTime()) / (oneDay));
+            document.getElementById("task08").innerHTML = `There are ${remainingDay} Days remaining`;
+
+        }
+
+        //************************************************************ */
+        // Task N0 9
+        // 9. Write a JavaScript program to calculate multiplication and division of two numbers.
+
+        function Tables() {
+            let n1 = document.getElementById("n1").value
+            let n2 = document.getElementById("n2").value
+            let oper = document.getElementById("operator").value
+
+            if (oper === '*') {
+                document.getElementById("task09").innerHTML = Number(n1) * Number(n2);
+            }
+
+            else if (oper === '/') {
+                document.getElementById("task09").innerHTML = (Number(n1) / Number(n2)).toFixed(2);
+            }
+            else if (oper === 'select') {
+                document.getElementById("task09").innerHTML = `Please Enter Any Number`;
+            }
+            else {
+                document.getElementById("task09").innerHTML = `Value Does Not Exist`
+            }
+
+        }
+        //************************************************************ */
+        // Task N0 10
+        function checkTem() {
+            let temp = document.getElementById("temp1").value
+            let operator = document.getElementById("temperature").value
+            let c1 = (temp * 9) / 5 + 32;
+            let f1 = (temp - 32) * 5 / 9;
+            if (operator === 'c') {
+                document.getElementById("task10").innerHTML = `The Given Temprature ${temp} is Equal to ${c1}°C`
+            }
+            else if (operator === 'f') {
+                document.getElementById("task10").innerHTML = `The Given Temprature ${temp} is Equal to ${f1}°F`
+                    ;
+            }
+            else if (operator === 'select') {
+                document.getElementById("task10").innerHTML = `Please Enter Any Number for Check Temperature`;
+            }
+            else {
+                document.getElementById("task10").innerHTML = `Value Does Not Exist`;
+
+            }
+
+        }
+
+        //************************************************************ */
+        // Task N0 11
+        function AddTwo() {
+            let add1 = document.getElementById("add1").value
+            let add2 = document.getElementById("add2").value
+
+            if (add1 == add2) {
+                document.getElementById("task11").innerHTML = (3 * (Number(add1) + Number(add2)));
+            }
+            else {
+                document.getElementById("task11").innerHTML = (Number(add1) + Number(add2));
+
+            }
+
+        }
+
+        //************************************************************ */
+        // Task N0 12
+        // 12. Write a JavaScript program to check whether a given Number is within 20 of 100 or 400.
+        function valCheck() {
+            let val1 = document.getElementById("val1").value
+            if ((val1 >= 20 && val1 <= 100)) {
+                document.getElementById("task12").innerHTML = `The Entered No ${val1} is Within The 20 of 100
+                `;
+            }
+            else if ((val1 >= 100 && val1 <= 400)) {
+                document.getElementById("task12").innerHTML = `The Entered No ${val1} is Within The 100 of 400`;
+            }
+            else {
+                document.getElementById("task12").innerHTML = `The Entered No ${val1} is Not Within The 20 of 100 or 400`;
+            }
+        }
+
+        //************************************************************ */
+        // Task N0 13
+        function gradCheck() {
+            let inp1 = document.getElementById("inp1").value
+            let inp2 = document.getElementById("inp2").value
+            let inp3 = document.getElementById("inp3").value
+
+            if ((inp1 == inp2 && inp2 == inp3)) {
+                document.getElementById("task13").innerHTML = `All inputs are Same no Greater number`;
+            }
+
+            else if ((inp1 >= inp2 && inp1 >= inp3)) {
+                document.getElementById("task13").innerHTML = `Input 1 is Greater`;
+            }
+            else if ((inp2 >= inp1 && inp2 >= inp3)) {
+                document.getElementById("task13").innerHTML = `Input 2 is Greater`;
+            }
+            else if ((inp3 >= inp1 && inp3 >= inp1)) {
+                document.getElementById("task13").innerHTML = `Input 3 is Greater`;
+            }
+
+            else {
+                document.getElementById("task13").innerHTML = `Value Does not Exist`;
+
+            }
+        }
+        //************************************************************ */
+        // Task N0 14
+        //14. Write a JavaScript program to capitalize the first letter of each word of a given string.
+        function checkStr() {
+            let st = document.getElementById("str1").value
+            for (let i = 0; i < st.length; i++) {
+                st = st.charAt(0).toUpperCase() + st.slice(1)
+            }
+            document.getElementById("task14").innerHTML = st;
+
+        }
+
+        //************************************************************ */
+        // Task N0 15
+        function checkDays() {
+            let hour = document.getElementById("hour").value
+            let hh = (hour * 24);
+            let mmin = (hour * 1440);
+            let ssec = (hour * 86400);
+            let ssecMill = (hour * 86400000);
+            if (hour == 1) {
+                document.getElementById("task15").innerHTML = `${hour} day is equal  to ${hh} &nbsp hours &nbsp ${mmin} &nbsp minutes &nbsp ${ssec} &nbsp second &nbsp and &nbsp ${ssecMill} &nbsp milisecond`
+            }
+            else {
+                document.getElementById("task15").innerHTML = ` There are ${hour} &nbsp days is equal  to ${hh} &nbsp hours &nbsp ${mmin} &nbsp minutes &nbsp ${ssec} &nbsp second &nbsp and &nbsp ${ssecMill} &nbsp milisecond`
+            }
+        }
+
+        //************************************************************ */
+        // Task N0 16
+        //  16. Write a JavaScript program to reverse the elements of a given array, you can not use Array.reverse() do it with loop.
+
+        function reverStr() {
+            let rev = document.getElementById("reversing").value
+            let arri = [];
+            for (let irev = rev.length - 1; irev >= 0; irev--) {
+                arri.push(rev[irev]);
+            }
+            document.getElementById("task16").innerHTML = `The Reversed Array is &nbsp : &nbsp ${arri} `
+        }
+
+        //************************************************************ */
+        // Task N0 17
+        // 17. Write a JavaScript program to find the larger value between the first or last
+        // and set all the other elements with that value. Display the new array.
+
+        document.querySelector('#task17 form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const input = document.querySelector('#task17 input').value.split(',');
+
+            document.querySelector(
+                '#task17 #result'
+            ).innerHTML = `<h3>The Final Array is:  ${input[0] > input[input.length - 1]
+                ? new Array(input.length).fill(input[0]).join(' ')
+                : input[0] < input[input.length - 1]
+                    ? new Array(input.length).fill(input[input.length - 1]).join(' ')
+                    : 'Both Of The Elements Have Same Value'
+            } </h3>`;
+        });
+
+
+
+
+        //************************************************************ */
+        // Task N0 18
+
+        document.querySelector('#task18 form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const input1 = document
+                .querySelector('#task18 .input1')
+                .value.split(',')
+                .sort((a, b) => b - a);
+            const input2 = document.querySelector('#task18 .input2').value;
+
+            document.querySelector('#task18 #result1').innerHTML = `<h3> ${input1[parseInt(input2) - 1]
+                } </h3>`;
+        });
+
+
+
+        //************************************************************ */
+        // Task N0 19
+
+        document.querySelector('#task19 form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const memo = {};
+
+            document
+                .querySelector('#task19 input')
+                .value.split(',')
+                .forEach((el) => {
+                    memo[el] !== undefined ? memo[el]++ : (memo[el] = 1);
+                });
+
+            document.querySelector(
+                '#task19 #result2'
+            ).innerHTML = `<h3>The Most Appearing No is: ${Object.keys(memo).sort((a, b) => memo[b] - memo[a])[0]
+            } </h3>`;
+        });
+
+        //************************************************************ */
+        // Task 20
+
+
+        document.querySelector('#task20 form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const input1 = document.querySelector('#task20 .input1').value.split(',');
+            const input2 = document.querySelector('#task20 .input2').value;
+            const input3 = document.querySelector('#task20 .input3').value;
+
+            document.querySelector(
+                '#task20 #result3'
+            ).innerHTML = `<h3>Replaced all occurances of '${input2}' in [${input1}] with '${input3}' and the result is: ${input1
+                .map((el) => (el === input2 ? input3 : el))
+                .join(' ')} </h3>`;
+        });
+
+    </script>
+
+
+</body>
+
+</html>
