@@ -1,0 +1,76 @@
+/* Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Libre+Franklin:wght@500&display=swap');
+body {
+    background-color: #f1f1f1;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* ALL DIV STYLED ARE HERE */
+
+.task03 h2, .task04 h2, .task05 h2, .task06 h2, .task07 h2, .task08 h2, .task09 h2, .task10 h2, .task11 h2, .task12 h2, .task13 h2, .task14 h2, .task15 h2, .task16 h2, .task17 h2, .task18 h2, .task19 h2, .task20 h2 {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+/* ALL INPUTS STYLED ARE HERE */
+
+#years, #jan1, #jan2, #num, #dateAug, #n1, #n2, #operator, #temp1, #temperature, #add1, #add2, #val1, #inp1, #inp2, #str1, #inp3, #hour, #reversing, #largVal, #largVal1, #largVal2, #largVal3, #task17 input, #task18 input, #task19 input, #task20 input, #anum2, #anum3, #ns1, #ns2, #word1, #ns3 {
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 13px 30px;
+}
+
+#anum1 {
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 13px 30px;
+    width: 359px;
+}
+
+/* ALL BUTTONS STYLED ARE HERE */
+
+.btn1, .btn2, .btn3, .bt3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9, .btn10, .btn11, .btn12, .btn13, .btn14, .btn15, .btn16, .wordbtn, .btny {
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    transition: all 0.2s;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+.btn1:hover, .bt3:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover, .btn9:hover, .btn10:hover, .btn11:hover, .btn12:hover, .btn13:hover, .btn14:hover, .btn15:hover, .btn16:hover, .btny:hover, .wordbtn:hover {
+    color: black;
+    background-color: rgb(147, 229, 243);
+}
+
+/* MAIN TOP HEADING */
+#task00 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* RESPONSIVE WEBSITE */
+@media screen and (max-width: 1051px) {
+    .all {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+    body button input {
+        margin: 10px;
+        left: 100px;
+    }
+    body div input {
+        margin: 4px;
+    }
+    #anum1 {      
+        width: 280px;
+    }
+}
