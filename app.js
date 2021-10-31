@@ -280,6 +280,9 @@ function checkDays() {
     let ssecMill = (hour * 86400000);
     if (hour == 1) {
         document.getElementById("task15").innerHTML = `<span style="color:blue;">${hour} day is equal  to ${hh} &nbsp hours &nbsp ${mmin} &nbsp minutes &nbsp ${ssec} &nbsp second &nbsp and &nbsp ${ssecMill} &nbsp milisecond</span>`
+    } 
+    else if (hour) {
+        document.getElementById("task15").innerHTML = `<span style="color:blue;">${hour} day is equal  to ${hh} &nbsp hours &nbsp ${mmin} &nbsp minutes &nbsp ${ssec} &nbsp second &nbsp and &nbsp ${ssecMill} &nbsp milisecond</span>`
     }
     else {
         document.getElementById("task15").innerHTML = ` <span style="color:red;">Entered Number</span>`
